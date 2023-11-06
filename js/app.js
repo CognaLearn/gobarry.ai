@@ -1,19 +1,21 @@
 $(function () {
+  $(window).scrollTop(0);
+
   // Start of back to top button
-  //   var btn = $("#back-to-top");
+  var btn = $("#back-to-top");
 
-  //   $(window).scroll(function () {
-  //     if ($(window).scrollTop() > 300) {
-  //       btn.addClass("show");
-  //     } else {
-  //       btn.removeClass("show");
-  //     }
-  //   });
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass("show");
+    } else {
+      btn.removeClass("show");
+    }
+  });
 
-  //   btn.on("click", function (e) {
-  //     e.preventDefault();
-  //     $("html, body").animate({ scrollTop: 0 }, "300");
-  //   });
+  btn.on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "300");
+  });
   // End of back to top button
 
   // page animation
@@ -72,4 +74,39 @@ $(function () {
     }
   });
   // end of page animation
+
+  // start of tooltip
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+  // end of tooltip
+
+  $("#modeToggle ~ label").click(function () {
+    $(this).attr(
+      "aria-checked",
+      $(this).attr("aria-checked") === "true" ? "false" : "true"
+    );
+  });
+
+  $("#modeToggle ~ label").keydown(function (event) {
+    if (event.key === " ") {
+      event.preventDefault();
+      $("#modeToggle").prop("checked", !$("#modeToggle").prop("checked"));
+      $("#modeToggle").trigger("change");
+
+      $(this).attr(
+        "aria-checked",
+        $(this).attr("aria-checked") === "true" ? "false" : "true"
+      );
+    }
+  });
+
+  $("#modeToggle").change(function () {
+    $("#section4").toggleClass("dark-mode", this.checked);
+    $(".dark-wavy-arrow").toggleClass("d-none", this.checked);
+    $(".white-wavy-arrow").toggleClass("d-none", !this.checked);
+  });
 });

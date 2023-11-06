@@ -27,53 +27,56 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
-  <header class="d-flex flex-wrap justify-content-between align-items-center position-sticky top-0 z-index-1 top-bar">
-    <div class="top-bar-logo">
-      <a href="https://gobarry.ai/">
-        <img src="img/logo.png" alt="GoBarry Logo" />
-      </a>
-    </div>
-    <div class="row two-rows">
-      <div class="col">
-        <button class="btn btn-outline-primary btn-lg">Contact Us</button>
-      </div>
-
-      <div class="col">
-        <a href="https://www.figma.com/proto/n0bku0crTsbCjmiT879J1G/GOBARRY-DEMO?page-id=0%3A1&type=[…]2C100%2C0.18&t=SrljC0eZDBfuHDNL-1&scaling=min-zoom&mode=design"
-          class="btn btn-primary btn-lg fixed-width-get-app">
-          Get the App
+<body class="text-break">
+  <header class="top-bar position-sticky top-0 z-index-1">
+    <div class="wrapper d-flex flex-wrap justify-content-between align-items-center">
+      <div class="top-bar-logo">
+        <a href="https://gobarry.ai/">
+          <img src="img/logo.png" alt="GoBarry Logo" />
         </a>
+      </div>
+      <div class="row two-rows">
+        <div class="col">
+          <button class="btn btn-outline-primary btn-lg w-100">Contact Us</button>
+        </div>
+
+        <div class="col">
+          <a href="https://www.figma.com/proto/n0bku0crTsbCjmiT879J1G/GOBARRY-DEMO?page-id=0%3A1&type=[…]2C100%2C0.18&t=SrljC0eZDBfuHDNL-1&scaling=min-zoom&mode=design"
+            class="btn btn-primary btn-lg fixed-width-get-app w-100">
+            Get the App
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section id="section1" class="position-relative d-flex">
-      <div class="row d-flex align-items-center" data-animate-in="up fadeIn" data-animate-in-delay="100">
-        <div class="col-md-6 offset-md-3">
-          <h1 class="text-center text-break">AI-powered Adaptive Learning System</h1>
-          <h4 class="text-center">
-            Leveraging past exam data, GoBarry instantly gauges student progress, adapting their learning path for
-            increased personalised development.
-          </h4>
-          <div class="content-image">
-            <img src="img/header-image.png" alt="Image Description">
-          </div>
-
-          <div class="col-md-8 offset-md-2 row">
-            <div class="col">
-              <img src="img/App Store Black.png" alt="Apple Store">
+    <section id="section1">
+      <div class="wrapper position-relative d-flex">
+        <div class="row d-flex align-items-center" data-animate-in="up fadeIn" data-animate-in-delay="100">
+          <div class="col-md-6 offset-md-3">
+            <h1 class="text-center">AI-powered Adaptive Learning System</h1>
+            <h4 class="text-center">
+              Leveraging past exam data, GoBarry instantly gauges student progress, adapting their learning path for
+              increased personalised development.
+            </h4>
+            <div class="content-image">
+              <img src="img/header-image.png" alt="Image Description">
             </div>
-            <div class="col">
-              <img src="img/Google Play Black.png" alt="Google Play Store">
+
+            <div class="col-8 offset-2 row">
+              <div class="col">
+                <img src="img/App Store Black.png" alt="Apple Store">
+              </div>
+              <div class="col">
+                <img src="img/Google Play Black.png" alt="Google Play Store">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="position-absolute barry-badge">
-        <img src="img/stamp.png" alt="Image Description" class="top-right-image">
+        <div class="position-absolute barry-badge">
+          <img src="img/stamp.png" alt="Image Description" class="top-right-image">
+        </div>
       </div>
     </section>
 
@@ -176,143 +179,181 @@
     </section> -->
 
     <section id="section3">
-      <div class="text-center" data-animate-in="up fadeIn" data-animate-in-delay="100">
-        <h4>
-          How It Works
-        </h4>
-        <h2>
-          Unlock Your Potential with GoBarry:
-          <br>
-          <span class="success-highlight">
-            Tailoring Learning for Your Success!
-          </span>
-        </h2>
-      </div>
-
-      <div class="row mt-4" data-animate-in="up fadeIn" data-animate-in-delay="100">
-        <div class="col-md">
-          <img src="img/Frame 1967.png" alt="Android Logo">
+      <div class="wrapper">
+        <div class="text-center" data-animate-in="up fadeIn" data-animate-in-delay="100">
+          <h4>
+            How It Works
+          </h4>
+          <h2>
+            Unlock Your Potential with GoBarry:
+            <br>
+            <span class="success-highlight">
+              Tailoring Learning for Your Success!
+            </span>
+          </h2>
         </div>
 
-        <div class="col-md mt-3 mt-sm-0">
-          <p>
-            At GoBarry, we harness the power of historical exam data to provide you with a truly unique and personalized
-            learning
-            experience. Say goodbye to one-size-fits-all education and hello to a dynamic, student-centric approach that
-            instantly
-            evaluates your progress and adapts your learning path.
-          </p>
-
-          <div class="d-flex">
-            <div class="align-self-start bg-dark text-white rounded-circle p-3">
-              <i class="ph ph-chart-line fs-48px"></i>
-            </div>
-            <div class="ps-4">
-              <h3>Instant Progress Assessment</h3>
-              <p>
-                We analyze your performance data to understand your strengths and weaknesses.
-              </p>
-            </div>
+        <div class="row mt-4" data-animate-in="up fadeIn" data-animate-in-delay="100">
+          <div class="col-md">
+            <img src="img/Frame 1967.png" alt="Android Logo">
           </div>
 
-          <div class="mt-40px d-flex">
-            <div class="align-self-start bg-primary-subtle text-primary rounded-circle p-3">
-              <i class="ph ph-pen-nib fs-48px"></i>
-            </div>
-            <div class="ps-4">
-              <h3>Personalized Learning Path</h3>
-              <p>
-                Your journey is crafted to fit your needs, ensuring your development is optimal.
-              </p>
-            </div>
-          </div>
+          <div class="col-md mt-3 mt-sm-0">
+            <p>
+              At GoBarry, we harness the power of historical exam data to provide you with a truly unique and
+              personalized
+              learning
+              experience. Say goodbye to one-size-fits-all education and hello to a dynamic, student-centric approach
+              that
+              instantly
+              evaluates your progress and adapts your learning path.
+            </p>
 
-          <div class="mt-40px d-flex">
-            <div class="align-self-start bg-primary-subtle text-primary rounded-circle p-3">
-              <i class="ph ph-target fs-48px"></i>
+            <div class="row">
+              <div class="col-md max-width-105px">
+                <div class="align-self-start bg-primary-subtle text-primary rounded-circle p-3 badge-fixed-size">
+                  <i class="ph ph-chart-line fs-48px"></i>
+                </div>
+              </div>
+              <div class="col-md">
+                <h3>Instant Progress Assessment</h3>
+                <p>
+                  We analyze your performance data to understand your strengths and weaknesses.
+                </p>
+              </div>
             </div>
-            <div class="ps-4">
-              <h3>Accelerated Success</h3>
-              <p>
-                With GoBarry, you're on the fast track to reaching your educational goals.
-              </p>
+
+            <div class="mt-40px row">
+              <div class="col-md max-width-105px">
+                <div class="align-self-start bg-primary-subtle text-primary rounded-circle p-3 badge-fixed-size">
+                  <i class="ph ph-pen-nib fs-48px"></i>
+                </div>
+              </div>
+              <div class="col-md">
+                <h3>Personalized Learning Path</h3>
+                <p>
+                  Your journey is crafted to fit your needs, ensuring your development is optimal.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-40px row">
+              <div class="col-md max-width-105px">
+                <div class="align-self-start bg-primary-subtle text-primary rounded-circle p-3 badge-fixed-size">
+                  <i class="ph ph-target fs-48px"></i>
+                </div>
+              </div>
+              <div class="col-md">
+                <h3>Accelerated Success</h3>
+                <p>
+                  With GoBarry, you're on the fast track to reaching your educational goals.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="section4" class="overflow-hidden">
-      <div class="row" data-animate-in="up fadeIn" data-animate-in-delay="100">
-        <div class="col-md">
-          <h4>
-            Available in
-          </h4>
-          <h2>
-            Light & Dark Mode
-          </h2>
-          <p>
-            Optimize your viewing experience in low-light settings while saving on battery usage. This not only aids in
-            boosting
-            concentration and efficiency, especially for night owls, but also enhances reading comprehension, speed, and
-            even sparks
-            creative thinking.
-          </p>
-        </div>
+    <section id="section4">
+      <div class="wrapper">
+        <div class="d-md-flex flex-wrap" data-animate-in="up fadeIn" data-animate-in-delay="100">
+          <div class="col-md">
+            <h4>
+              Available in
+            </h4>
+            <h2>
+              Light & Dark Mode
+            </h2>
+            <p>
+              Optimize your viewing experience in low-light settings while saving on battery usage. This not only aids
+              in
+              boosting
+              concentration and efficiency, especially for night owls, but also enhances reading comprehension, speed,
+              and
+              even sparks
+              creative thinking.
+            </p>
+            <div class="form-check form-switch d-flex flex-wrap align-items-center">
+              <div class="switchToggle">
+                <input class="form-check-input" type="checkbox" role="switch" id="modeToggle">
+                <label class="form-check-input-sub" for="modeToggle" role="switch" aria-checked="false" tabindex="0"
+                  aria-labelledby="id-group-label">
+                  <span class="star-img" aria-hidden="true"></span>
+                  <span class="moon-sun" aria-hidden="true"></span>
+                  <span class="moon-details" aria-hidden="true"></span>
+                  <span class="cloud-right-1" aria-hidden="true"></span>
+                  <span class="cloud-left-1" aria-hidden="true"></span>
+                  <span class="light-house" aria-hidden="true"></span>
+                  <span class="cloud-left-2" aria-hidden="true"></span>
+                  <span class="cloud-right-2" aria-hidden="true"></span>
+                </label>
+              </div>
+              <label id="id-group-label" class="form-check-label d-block d-md-inline-block ms-3 mb-0" for="modeToggle">
+                <img class="dark-wavy-arrow" src="img/wavy_arrow_dark.png" alt=" " width="80px" aria-hidden="true" />
+                <img class="white-wavy-arrow d-none" src="img/wavy_arrow_white.png" alt=" " width="80px"
+                  aria-hidden="true" />
+                Try clicking me!
+              </label>
+            </div>
+          </div>
 
-        <div class="col-md mt-sm-0">
-          <img src="img/mockup.png" alt="mockup">
+          <div class="col-md mt-sm-0 fill-img">
+            <img src="img/mockup.png" alt="mockup">
+          </div>
         </div>
       </div>
     </section>
 
     <section id="section5">
-      <div class="text-center" data-animate-in="up fadeIn" data-animate-in-delay="100">
-        <h4>
-          Why choose us?
-        </h4>
-      </div>
-
-      <div class="row" data-animate-in="up fadeIn" data-animate-in-delay="100">
-        <div class="col">
-          <div class="d-inline-block bg-primary-subtle text-primary rounded-circle p-3 mb-4">
-            <i class="ph ph-books fs-48px"></i>
-          </div>
-          <div>
-            <h3>Comprehensive Practice</h3>
-            <p>
-              Our extensive question library covers a wide range of subjects, ensuring you have ample opportunities to
-              master key
-              concepts.
-            </p>
-          </div>
+      <div class="wrapper">
+        <div class="text-center" data-animate-in="up fadeIn" data-animate-in-delay="100">
+          <h4>
+            Why choose us?
+          </h4>
         </div>
 
-        <div class="col">
-          <div class="d-inline-block bg-primary-subtle text-primary rounded-circle p-3 mb-4">
-            <i class="ph ph-seal-check fs-48px"></i>
+        <div class="row" data-animate-in="up fadeIn" data-animate-in-delay="100">
+          <div class="col-xs-12 col-md">
+            <div class="d-inline-block bg-primary-subtle text-primary rounded-circle p-3 mb-4 badge-fixed-size">
+              <i class="ph ph-books fs-48px"></i>
+            </div>
+            <div>
+              <h3>Comprehensive Practice</h3>
+              <p>
+                Our extensive question library covers a wide range of subjects, ensuring you have ample opportunities to
+                master key
+                concepts.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3>Top School Quality</h3>
-            <p>
-              Gain access to questions that reflect the high standards set by Singapore's top schools, providing you
-              with a
-              competitive edge.
-            </p>
-          </div>
-        </div>
 
-        <div class="col">
-          <div class="d-inline-block bg-primary-subtle text-primary rounded-circle p-3 mb-4">
-            <i class="ph ph-trend-up fs-48px"></i>
+          <div class="col-xs-12 col-md">
+            <div class="d-inline-block bg-primary-subtle text-primary rounded-circle p-3 mb-4 badge-fixed-size">
+              <i class="ph ph-seal-check fs-48px"></i>
+            </div>
+            <div>
+              <h3>Top School Quality</h3>
+              <p>
+                Gain access to questions that reflect the high standards set by Singapore's top schools, providing you
+                with a
+                competitive edge.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3>Elevate Your Performance</h3>
-            <p>
-              With a wealth of practice questions at your fingertips, you can sharpen your skills and boost your
-              academic
-              achievements.
-            </p>
+
+          <div class="col-xs-12 col-md">
+            <div class="d-inline-block bg-primary-subtle text-primary rounded-circle p-3 mb-4 badge-fixed-size">
+              <i class="ph ph-trend-up fs-48px"></i>
+            </div>
+            <div>
+              <h3>Elevate Your Performance</h3>
+              <p>
+                With a wealth of practice questions at your fingertips, you can sharpen your skills and boost your
+                academic
+                achievements.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -356,90 +397,121 @@
 
   <footer>
     <div class="footer-position">
-      <div class="footer-banner position-relative">
-        <div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
-          <h4>
-            Unlock Your Learning Journey Today with GoBarry.ai
-          </h4>
+      <div class="wrapper">
+        <div class="footer-banner position-relative">
+          <div class="col-xxl-8 offset-xxl-2">
+            <h4>
+              Unlock Your Learning Journey Today with GoBarry.ai
+            </h4>
 
-          <h1 class="text-break">
-            Experience the App Now
-          </h1>
+            <h1>
+              Experience the App Now
+            </h1>
 
-          <div class="GoBarry-Qr-Code col-md-4 offset-md-4 mb-4">
-            <img src="img/gobarry-form-qr-code.png" alt="GoBarry Qr Code">
+            <div class="GoBarry-Qr-Code col-md-4 offset-md-4 mb-4">
+              <img src="img/gobarry-form-qr-code.png" alt="GoBarry Qr Code">
+            </div>
+
+            <p>
+              Join us in your journey towards academic success and experience the power of over 200,000 top-quality
+              questions. Start practicing with us today!
+            </p>
           </div>
 
-          <p>
-            Join us in your journey towards academic success and experience the power of over 200,000 top-quality
-            questions. Start practicing with us today!
-          </p>
+          <img src="img/front shapes.png" alt=" " width="71px" class="shape position-absolute">
+          <img src="img/front shapes1.png" alt=" " width="112px" class="shape-1 position-absolute">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-content">
+      <div class="wrapper">
+        <div class="mb-3 mb-lg-80px">
+          <img src="img/logo-white.png" alt="GoBarry Logo" width="176px" class="mb-4" />
         </div>
 
-        <img src="img/front shapes.png" alt=" " width="71px" class="shape position-absolute">
-        <img src="img/front shapes1.png" alt=" " width="112px" class="shape-1 position-absolute">
+        <div class="d-md-flex flex-wrap border-top pt-4">
+          <div class="col-md">
+            <p class="mb-0">Copyright © 2023 GOBARRY.AI. All rights reserved.</p>
+          </div>
+
+          <div class="col-md mt-3 mt-md-0 text-md-end">
+            <a href="privacy-policy.html" class="d-block d-md-inline-block">Privacy Policy</a>
+            <a href="terms-of-use.html" class="ms-md-4 d-block d-md-inline-block">Terms of Use</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row mb-80px">
-      <div class="col-xs-12 col-md-6 mt-4 mt-lg-0">
-        <img src="img/logo-white.png" alt="GoBarry Logo" width="176px" class="mb-4" />
+    <!-- <div class="row mb-3 mb-md-80px">
+        <div class="col-xs-12 col-md-6 mt-4 mt-lg-0">
+          <img src="img/logo-white.png" alt="GoBarry Logo" width="176px" class="mb-4" />
 
-        <!-- <h2 class="col-md-9">
-          Unlock Your Potential with GoBarry:
-          <br />
-          <span class="success-highlight">
-            Tailoring Learning for Your Success!
-          </span>
-        </h2>
-        <p class="col-md-9 mb-md-5">
-          Join us in your journey towards academic success and experience the power of over 200,000 top-quality
-          questions. Start
-          practicing with us today!
-        </p> -->
+          <h2 class="col-md-9">
+            Unlock Your Potential with GoBarry:
+            <br />
+            <span class="success-highlight">
+              Tailoring Learning for Your Success!
+            </span>
+          </h2>
+          <p class="col-md-9 mb-md-5">
+            Join us in your journey towards academic success and experience the power of over 200,000 top-quality
+            questions. Start
+            practicing with us today!
+          </p>
 
-        <!-- <div class="social-medias">
-          <a href="#" class="bg-dark-subtle text-white rounded-circle p-3 lh-1" aria-label="facebook">
-            <i class="ph ph-facebook-logo fs-24px" aria-hidden="true"></i>
-          </a>
+          <div class="social-medias">
+            <a href="#" class="bg-dark-subtle text-white rounded-circle p-3 lh-1" aria-label="facebook">
+              <i class="ph ph-facebook-logo fs-24px" aria-hidden="true"></i>
+            </a>
 
-          <a href="#" class="bg-dark-subtle text-white rounded-circle p-3 lh-1" aria-label="instagram">
-            <i class="ph ph-instagram-logo fs-24px" aria-hidden="true"></i>
-          </a>
+            <a href="#" class="bg-dark-subtle text-white rounded-circle p-3 lh-1" aria-label="instagram">
+              <i class="ph ph-instagram-logo fs-24px" aria-hidden="true"></i>
+            </a>
 
-          <a href="#" class="bg-dark-subtle text-white rounded-circle p-3 lh-1" aria-label="twitter">
-            <i class="ph ph-twitter-logo fs-24px" aria-hidden="true"></i>
-          </a>
+            <a href="#" class="bg-dark-subtle text-white rounded-circle p-3 lh-1" aria-label="twitter">
+              <i class="ph ph-twitter-logo fs-24px" aria-hidden="true"></i>
+            </a>
 
-          <a href="#" class="bg-dark-subtle text-white rounded-circle p-3 lh-1" aria-label="mail">
-            <i class="ph ph-envelope fs-24px" aria-hidden="true"></i>
-          </a>
-        </div> -->
+            <a href="#" class="bg-dark-subtle text-white rounded-circle p-3 lh-1" aria-label="mail">
+              <i class="ph ph-envelope fs-24px" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 mt-4 mt-lg-0">
+          <h3 class="mb-4">
+            Get the Latest Updates
+          </h3>
+          <form class="d-inline-flex">
+            <input type="email" class="form-control col-xs-12 col-md-4" id="exampleInputEmail"
+              placeholder="Enter Email Address">
+            <button type="submit" class="btn btn-primary ms-4 col-xs-12 col-md-4">Submit</button>
+          </form>
+        </div>
       </div>
 
-      <div class="col-xs-12 col-md-6 mt-4 mt-lg-0">
-        <h3 class="mb-4">
-          Get the Latest Updates
-        </h3>
-        <!-- <form class="d-inline-flex">
-          <input type="email" class="form-control col-xs-12 col-md-4" id="exampleInputEmail"
-            placeholder="Enter Email Address">
-          <button type="submit" class="btn btn-primary ms-4 col-xs-12 col-md-4">Submit</button>
-        </form> -->
-      </div>
-    </div>
+      <div class="row border-top pt-4">
+        <div class="col-xs-12 col-md ps-0">
+          <p class="mb-0">Copyright © 2023 GOBARRY.AI. All rights reserved.</p>
+        </div>
 
-    <div class="d-flex flex-wrap border-top pt-4">
-      <div class="col-xs-12 col-md-4 ps-0">
-        <p class="mb-0">Copyright © 2023 GOBARRY.AI. All rights reserved.</p>
-      </div>
-
-      <div class="col-xs-12 col-md-5 offset-md-3 text-end pe-0">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-of-use.html" class="ps-md-4">Terms of Use</a>
-      </div>
-    </div>
+        <div class="col-xs-12 col-md mt-3 mt-md-0 text-md-end p-0">
+          <a href="privacy-policy.html" class="d-block d-md-inline-block">Privacy Policy</a>
+          <a href="terms-of-use.html" class="ms-md-4 d-block d-md-inline-block">Terms of Use</a>
+        </div>
+      </div> -->
   </footer>
+
+  <button id="back-to-top" data-bs-toggle="tooltip" data-bs-title="Back To Top">
+    <div class="btn-bubble"></div>
+    <img src="icon.png" alt="GoBarry icon">
+    <div class="back-to-top">
+      <i class="ph ph-caret-up"></i>
+    </div>
+  </button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
